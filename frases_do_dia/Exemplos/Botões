@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  return runApp(MaterialApp(
+      title: "Frases do Dia",
+      home: Container(
+        color: Colors.white,
+        child: Column(
+          children: <Widget>[
+            TextButton(
+              onPressed: () {
+                print("Clicado");
+              },
+              child: Text(
+                "Clicar",
+                style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.black,
+                    decoration: TextDecoration.none),
+              ),
+            ),
+          ],
+        ),
+      )));
+}

@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  return runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Frases do Dia",
+      home: Container(
+        //color: Colors.white,
+        margin: EdgeInsets.only(top: 40), //Interno
+        decoration:
+            BoxDecoration(border: Border.all(width: 3, color: Colors.white)),
+        child: Column(
+          //mainAxisAlignment: MainAxisAlignment.start,
+          //mainAxisAlignment: MainAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.end,
+          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Text("T1"),
+            Text("T2"),
+            Text("T3"),
+          ],
+        ),
+      )));
+}
